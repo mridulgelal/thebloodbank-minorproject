@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-
+  /* border: solid rgb(203, 18, 151); */
 }
 
 /* ------------------------------------navbar------------------------------------- */
@@ -89,6 +89,12 @@ input[type="checkbox"] {
   text-decoration: bold;
 
   width: 100%;
+  /* border: solid rgb(48, 168, 134); */
+  background-image: url(./backgroundwave1.png);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
 
 
 
@@ -100,41 +106,140 @@ input[type="checkbox"] {
 
 
 .landing-image {
-  height: 500px;
+  height: 480px;
   width: 600px;
   border-radius: 20px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
 
 
-}
-
-.wave {
-
-  position: absolute;
-  bottom: 1rem;
-  z-index: -1;
-  box-shadow: 0 14px 0px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.22);
 
 }
+
+
 
 
 
 /*----------------------------------- card------------------------------------- */
 
-.donor {
+.donors {
   /* background-color: #371f9f; */
+  /* border: solid black; */
+
 }
+
+
+
+
+
+/* -------------------------------filter---------------------- */
+
+
+
+
+.filter-section {
+  display: flex;
+  /* background-color: rgb(122, 122, 212); */
+
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* border: solid black; */
+  border: solid rgb(235, 232, 234);
+  background-color: #fd8c8c;
+  border-radius: 10px;
+}
+
+
+
+
+
+.filter-container {
+
+
+
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+
+.filter-header {
+
+  min-height: 10vh;
+  /* background-color: brown; */
+  text-align: center;
+  /* justify-content: center; */
+
+
+
+}
+
+.filter-header-text {
+  align-self: center;
+
+  letter-spacing: .7px;
+  font-size: 34px;
+  color: #5e3e4a;
+  /* text-decoration: underline; */
+
+}
+
+
+
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+
+
+/* Style the input fields */
+.form-inline select {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 15%;
+  border-radius: 15px;
+
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: #FF4B2B;
+  border: 1px solid #ddd;
+  color: rgb(26, 19, 19);
+  width: 15%;
+  border-radius: 15px;
+  /* height: 48px; */
+  align-self: center;
+  font-size: medium;
+}
+
+.form-inline button:hover {
+  background-color: rgb(246, 248, 255);
+}
+
+/* -------------------------------filter -----------------------------------*/
+
+
+/* -----------------------------cards start here-------------------------- */
 
 .inner {
   /* background-color: aqua; */
   /* display: flex;
   flex-wrap: wrap;
-  justify-content: center; */
+  just ify-content: center; */
   /* width: 70%; */
   overflow-y: scroll;
   height: 100vh;
+  /* border: solid rgb(193, 7, 7); */
 }
 
 .inner-inner-doner-border {
@@ -146,60 +251,11 @@ input[type="checkbox"] {
 
 }
 
-.donor-title-border {
-  text-align: left;
-  font-weight: 50;
-  font-size: 30px;
-
-
-
-}
-
-.donor-title-border label {
-  /* margin-left: 25px; */
-
-}
-
-.border {
-  width: 110px;
-  height: 3px;
-  background: #000000;
-  /* margin-left: 25px; */
-  /* margin: auto; */
-
-}
-
-/*-------------- dropdown------------ */
-
-
-.selection-form {
-  display: flex;
-  /* justify-content: space-around;
-  flex-wrap: wrap; */
-}
-
-.group-select {
-
-
-  font-size: 20px;
-  color: rgb(7, 5, 5);
-
-  padding: 12px 15px;
-  max-width: 75%;
-  box-sizing: border-box;
-  /* margin: 0px -500px 10px 0px; */
-  border: 1px solid rgb(206, 191, 191);
-
-  border-radius: .5em;
-
-  -webkit-appearance: none;
-  text-align: center;
-  margin-right: -30px;
 
 
 
 
-}
+
 
 
 
@@ -219,15 +275,7 @@ input[type="checkbox"] {
 
 }
 
-.doner-card {
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
-  /* background-color: rgb(37, 151, 151); */
 
-
-}
 
 
 .row {
@@ -314,9 +362,64 @@ input[type="checkbox"] {
     max-width: 80%;
 
   }
+
+  .vol {
+    flex: 100%;
+    max-width: 100%;
+
+
+  }
 }
 
 @media screen and (max-width: 920px) {
+
+
+
+
+
+
+  /* ---------------------------filters-------------------- */
+
+  .filter-section {
+
+    flex-direction: column;
+  }
+
+  .filter-header {
+    min-height: 5vh;
+
+
+
+  }
+
+
+
+
+
+  .form-inline select {
+
+
+    width: 80%;
+
+  }
+
+  .form-inline button {
+    margin-left: -40px;
+    width: 80%;
+  }
+
+
+
+
+
+
+  /* ---------------------------filters-------------------- */
+
+
+
+
+
+
   nav .menu-btn i {
     display: block;
   }
@@ -332,6 +435,13 @@ input[type="checkbox"] {
   .col {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .vol {
+    flex: 100%;
+    max-width: 100%;
+    justify-self: center;
+
   }
 
   #click:checked~.menu-btn i:before {
@@ -376,26 +486,15 @@ input[type="checkbox"] {
     background: none;
     color: white(252, 255, 251);
   }
-}
+
 }
 
 /* ---------------------------------events------------------------ */
 
-.events {
-  height: 100vh;
-  background-color: rgb(9, 181, 181);
-
-
-
-}
 
 
 
 
 
-/* ------------------------footer------------------ */
-.footers {
-  background-color: #fd8c8c;
-  color: #f2f2f2;
-  height: 50vh;
-}
+
+/* -----------------------event-section------------------ */
