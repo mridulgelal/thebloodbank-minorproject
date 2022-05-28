@@ -11,6 +11,11 @@
 
 body {
 	/* background-color: chartreuse; */
+	background-image: url(./assets/backgroundwave1.png);
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
 
 }
 
@@ -190,15 +195,7 @@ button {
 	z-index: -1;
 }
 
-.wave {
 
-	position: relative;
-	bottom: 0;
-	z-index: -1;
-	box-shadow: 0 14px 0px rgba(0, 0, 0, 0.25),
-		0 10px 10px rgba(0, 0, 0, 0.22);
-
-}
 
 
 @media screen and (max-width: 1000px) {

@@ -79,7 +79,7 @@ input[type="checkbox"] {
 
 #landing {
   margin-top: 80px;
-  height: 80vh;
+  height: 90vh;
   /* background-color: #7469a4; */
   display: flex;
   justify-content: space-around;
@@ -90,7 +90,7 @@ input[type="checkbox"] {
 
   width: 100%;
   /* border: solid rgb(48, 168, 134); */
-  background-image: url(./backgroundwave1.png);
+  background-image: url(./assets/backgroundwave1.png);
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -491,6 +491,8 @@ input[type="checkbox"] {
 
 /* ---------------------------------events------------------------ */
 
+
+.events {}
 
 
 
