@@ -6,6 +6,7 @@
 	font-family: "Poppins", sans-serif;
 	margin: 0;
 	padding: 0;
+	/* -webkit-appearance: none; */
 
 }
 
@@ -152,6 +153,13 @@ input {
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
+	border-radius: 15px;
+
+}
+
+select {
+	border-radius: 15px;
+
 }
 
 p {
@@ -173,6 +181,19 @@ a {
 	margin: 15px 0;
 }
 
+input[type=file]::file-selector-button {
+
+	border-radius: 10px;
+	border: none;
+	display: none;
+
+}
+
+.profile-picture-selection {
+
+	color: rgb(138, 112, 112);
+}
+
 button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
@@ -187,12 +208,17 @@ button {
 	bottom: 0;
 }
 
+button:hover {
+	background-color: white;
+	color: #111;
+}
+
 
 #sig {
 	/* background-color: aqua; */
 	position: relative;
 	margin-top: 150px;
-	z-index: -1;
+	z-index: 1;
 }
 
 

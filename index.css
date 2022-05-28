@@ -126,6 +126,7 @@ input[type="checkbox"] {
   /* background-color: #371f9f; */
   /* border: solid black; */
 
+
 }
 
 
@@ -147,6 +148,7 @@ input[type="checkbox"] {
   border: solid rgb(235, 232, 234);
   background-color: #fd8c8c;
   border-radius: 10px;
+
 }
 
 
@@ -180,7 +182,7 @@ input[type="checkbox"] {
 
   letter-spacing: .7px;
   font-size: 34px;
-  color: #5e3e4a;
+  color: white;
   /* text-decoration: underline; */
 
 }
@@ -229,6 +231,28 @@ input[type="checkbox"] {
 /* -------------------------------filter -----------------------------------*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----------------------------cards start here-------------------------- */
 
 .inner {
@@ -238,7 +262,8 @@ input[type="checkbox"] {
   just ify-content: center; */
   /* width: 70%; */
   overflow-y: scroll;
-  height: 100vh;
+  height: 90vh;
+
   /* border: solid rgb(193, 7, 7); */
 }
 
@@ -249,6 +274,7 @@ input[type="checkbox"] {
   justify-content: space-between;
   flex-wrap: wrap;
 
+  -webkit-appearance: none;
 }
 
 
@@ -492,7 +518,7 @@ input[type="checkbox"] {
 /* ---------------------------------events------------------------ */
 
 
-.events {}
+
 
 
 

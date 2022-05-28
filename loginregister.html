@@ -47,10 +47,10 @@
 						<input type="text" name='create_address' placeholder="region" required />
 						<input type="text" name='create_contact' placeholder="Contact" required />
 						<input type="email" name='create_email' placeholder="Email" required />
-						<input type="password" name='create_password' placeholder="Password" required />
+						<input type="password" name='create_password' placeholder="Password" required /> 
+				<label class="profile-picture-selection">Profile Picture	</label>	<input type="file" name="profilepic" title="choose profile pic "class="profileupload" accept="image/png, image/gif, image/jpeg" />
 
-
-						<select name="blood_group" class="group-select" required>
+						<select name="blood_group" class="group-select" required style="margin-bottom: 10px;">
 							<option value="">---&emsp;&emsp;&emsp;&emsp;Blood Group&emsp;&emsp;&emsp;&emsp;---</option>
 							<option value="A+">A+</option>
 							<option value="A-">A-</option>
@@ -61,6 +61,7 @@
 							<option value="AB+">AB+</option>
 							<option value="AB-">AB-</option>
 						</select>
+						
 
 
 						<button onclick="validate();">Sign Up</button>

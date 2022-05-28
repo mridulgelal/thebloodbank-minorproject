@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserPage</title>
+    <link rel="stylesheet" href="userpage.css">
+    <script src="./jsfiles/userpage.js"></script>
+</head>
+
+<body>
+
+    <section class="all-doners">
+
+
+
+
+        <!-- --------------------------nav bar section -------------------------------------->
+        <nav>
+            <div>
+                <img src="./assets/TheBloodBankLogowithtext.png" class="logo" />
+            </div>
+            <input type="checkbox" id="click" />
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="#">Events</a></li>
+                <li class="request-button"><a href="#">Log Out</a></li>
+            </ul>
+        </nav>
+
+<!-- --------------------------------------------filter section for sms request -------------------------- -->
+
+
+        <div class="filter-section">
+            <div class="filter-header">
+
+                <label class="filter-header-text">Request nearby donors</label>
+            </div>
+            <div class="filter-container">
+
+                <form name="form1" id="form1" class="form-inline">
+
+                    <select name="subject" id="subject">
+                        <option value="" selected="selected">Provience</option>
+                    </select>
+                    <br><br>
+                    <select name="topic" id="topic">
+                        <option value="" selected="selected">District</option>
+                    </select>
+                    <br><br>
+                    <select name="chapter" id="chapter">
+                        <option value="" selected="selected">Municipality</option>
+                    </select>
+                    <br><br>
+                    <select name="Blood-group">
+                        <option value="" selected="selected">Blood Group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                    <br><br>
+                    <button type="submit">Request</button>
+                </form>
+            </div>
+        </div>
+        <!--------------------------------- event creation and update donation history --------------------------------------------->
+
+        <div class="login-signup-form">
+            <div class="row">
+                <div class="col">
+                    <div class="donor-card">
+
+                        <div class="sign-up-container">
+                            <form action="/auth/register" method="POST" name="form1">
+                                <h1>Share a event</h1>
+
+                                <span>Enter details of your events</span>
+                                <input type="text" name='create_fname' placeholder="Name of organization" required />
+                                <input type="text" name='provience' placeholder="Provience" required />
+                                <input type="text" name='district' placeholder="district" required />
+                                <input type="text" name='municipality' placeholder="municipality" required />
+                                <input type="date" name="date" />
+
+                                <input type="text" name='create_contact' placeholder="Contact" required />
+                                <input type="email" name='create_email' placeholder="Email" required />
+                                <button type="submit"> Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="donor-card" id="sig">
+
+                        <div class="sign-in-container">
+                            <form action="/auth/login" method="POST">
+                                <h1>Update Donation History</h1>
+
+                                <span>Keep your donated history with us</span>
+                                <input type="text" name="organization" placeholder=" Name of donated organization " />
+                                <input type="date" name="date" />
+
+                                <button type="submit">Update</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+<!-- ------------------------------------donation notification to increase life saved counter----------------------------------- -->
+    <div class="activity-logs">
+
+
+        <label class="activity-header">Donation update</label>
+
+        <div class="notification-tray">
+
+            <div class="row">
+                <div class="notification">
+                    Did ram donated to your last request ? <button>YES</button> <button>NO</button>
+                </div>
+                <div class="notification">
+                    Did ram donated to your last request ? <button>YES</button> <button>NO</button>
+                </div>
+                <div class="notification">
+                    Did ram donated to your last request ? <button>YES</button> <button>NO</button>
+                </div>
+                <div class="notification">
+                    Did ram donated to your last request ? <button>YES</button> <button>NO</button>
+                </div>
+                <div class="notification">
+                    Did ram donated to your last request ? <button>YES</button> <button>NO</button>
+                </div>
+                <div class="notification">
+                    Did ram donated to your last request ? <button>YES</button> <button>NO</button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
