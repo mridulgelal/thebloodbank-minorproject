@@ -514,6 +514,7 @@ button:hover {
 }
 
 .notification {
+    max-width: ;
     width: 90%;
     /* border: solid black; */
     margin-bottom: 20px;
