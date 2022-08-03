@@ -174,8 +174,6 @@ input[type="checkbox"] {
   font-size: medium;
 }
 
-
-
 .form-inline button:hover {
   background-color: rgb(246, 248, 255);
 }
@@ -191,7 +189,7 @@ input[type="checkbox"] {
   just ify-content: center; */
   /* width: 70%; */
   overflow-y: scroll;
-  height: auto;
+  height: 90vh;
 
   /* border: solid rgb(193, 7, 7); */
 }
@@ -378,9 +376,5 @@ input[type="checkbox"] {
 }
 
 /* ---------------------------------events------------------------ */
-
-.events {
-  display: flex;
-  justify-content: center;
 
 /* -----------------------event-section------------------ */

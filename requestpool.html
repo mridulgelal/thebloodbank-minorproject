@@ -4,12 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Pintu</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="requestpool.css">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/f70fd3821b.js" crossorigin="anonymous"></script>
-  <script src="./jsfiles/index.js"></script>
+  <!-- <script src="./jsfiles/index.js"></script> -->
   <!-- <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet"> -->
 </head>
 <body>
@@ -19,41 +18,27 @@
     <!-- 
     ----------------------------------navbar section----------------------- -->
     <nav>
-      <div>
-        <img src="./assets/pintu.png" class="logo" />
-      </div>
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-       
-        <li><a href="./loginregister.html">Login</a></li>
-        <li><a href="./loginregister.html">SignUp</a></li>
-      
-      </ul>
-    </nav>
+        <div>
+          <img src="./assets/pintu.png" class="logo" />
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+         
+          <li class="request-button"><a href="#">Log Out</a></li>
+        </ul>
+      </nav>
 
 
 
     <!-- -----------------------------landing page section with image------------------------ -->
 
 
-    <section class="row" id="landing">
-      <div class="col">
-        One pint of blood can save up to three lives.
-
-        Start donating today.
-
-
-      </div>
-      <div>
-        <img src="./assets/6262.jpg" alt="blood donation" class="landing-image">
-      </div>
-
-    </section>
+   
 
     <!-- --------------------------here starts the donor filter and donor cards -------------------------------- -->
 
@@ -63,7 +48,7 @@
       <div class="filter-section">
         <div class="filter-header">
 
-          <label class="filter-header-text">Donors</label>
+          <label class="filter-header-text">Donation Requests </label>
         </div>
         <div class="filter-container">
 
@@ -121,6 +106,7 @@
                 <div class="address"><i class="fa-solid fa-location-arrow"></i>:Changunarayan, Bhaktapur</div>
                 <div class="blood-group">Blood Type: O+</div>
                 <div>life saved : 3</div>
+                <button type="submit"> Donate</button>
               </div>
               <div>
                 <div class="user-history">
@@ -145,17 +131,23 @@
                 <div class="address"><i class="fa-solid fa-location-arrow"></i>:Changunarayan, Bhaktapur</div>
                 <div class="blood-group">Blood Type: O+</div>
                 <div>life saved : 3</div>
+                <button type="submit"> Donate</button>
               </div>
               <div>
                 <div class="user-history">
                   <div class="user-donation-history">
                     Last donated in kartik 6th via Leo Blood Donation
+
+
+
                   </div>
                 </div>
-               </div>
- </div>
+              </div>
+            </div>
           </div>
-  <div class="col">
+
+
+          <div class="col">
             <div class="donor-card">
               <img src="./assets/p1.jpg" alt="">
               <div class="name">Anuragh Baskota</div>
@@ -165,16 +157,23 @@
                 <div class="address"><i class="fa-solid fa-location-arrow"></i>:Changunarayan, Bhaktapur</div>
                 <div class="blood-group">Blood Type: O+</div>
                 <div>life saved : 3</div>
+                <button type="submit"> Donate</button>
               </div>
               <div>
                 <div class="user-history">
                   <div class="user-donation-history">
                     Last donated in kartik 6th via Leo Blood Donation
+
+
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          
+ 
 
           
  </div>
@@ -183,18 +182,11 @@
     </div>
     </div>
   </section>
-  <!-- -----------------------------  events------------------------ -->
-
-  
 
 
 
- 
-  <!-- -----------------------------  events------------------------ -->
 
 
-
-  </section>
 
 
 

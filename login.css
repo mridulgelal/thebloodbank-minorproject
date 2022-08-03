@@ -159,6 +159,14 @@ input {
 
 select {
 	border-radius: 15px;
+	vertical-align: middle;
+	margin: 5px 10px 5px 0;
+	padding: 10px 20px;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	width: 100%;
+	
+	
 
 }
 

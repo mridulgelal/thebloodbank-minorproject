@@ -1,105 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./login.css">
+    <title>The Blood Bank</title>
+  </head>
 
-	<title>The Blood Bank</title>
-</head>
+  <body>
+    <section class="all-doners">
+      <nav>
+        <div>
+          <img src="./assets/pintu.png" class="logo" />
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="#">Login</a></li>
+          <li><a href="#">SignUp</a></li> -->
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">SignUp</a></li>
+        </ul>
+      </nav>
 
-<body>
+      <div class="row">
+        <div class="col">
+          <div class="donor-card">
+            <div class="sign-up-container">
+              <form action="/auth/register" method="POST" name="form1">
+                <h1>Create Account</h1>
 
-	<section class="all-doners">
-		<nav>
-		  <div>
-			<img src="./assets/TheBloodBankLogowithtext.png" class="logo" />
-		  </div>
-		  <input type="checkbox" id="click" />
-		  <label for="click" class="menu-btn">
-			<i class="fas fa-bars"></i>
-		  </label>
-		  <ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Login</a></li>
-			<li><a href="#">SignUp</a></li>
-			<li><a href="#">Events</a></li>
-			<li class="request-button"><a href="#">Requests</a></li>
-		  </ul>
-		</nav>
+                <span>Enter details for registration</span>
+                <input
+                  type="text"
+                  name="create_fname"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="create_address"
+                  placeholder="district"
+                  required
+                />
+                <select name="create_provience" class="group-select" required>
+                  <option value="Province No. 1">Province No. 1</option>
+                  <option value="Province No. 2">Province No. 2</option>
+                  <option value="Province No. 3">Province No. 3</option>
+                  <option value="Gandaki Pradesh">Gandaki Pradesh</option>
+                  <option value="Province No. 5">Province No. 5</option>
+                  <option value="Karnali Pradesh">Karnali Pradesh</option>
+                  <option value="Sudurpashchim Pradesh">
+                    Sudurpashchim Pradesh
+                  </option>
+                </select>
+                <input
+                  type="text"
+                  name="create_address"
+                  placeholder="municipality"
+                  required
+                />
+                <input
+                  type="text"
+                  name="create_contact"
+                  placeholder="Phone number"
+                  required
+                />
+                <input
+                  type="email"
+                  name="create_email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="password"
+                  name="create_password"
+                  placeholder="Password"
+                  required
+                />
+                <input
+                  type="password"
+                  name="create_password"
+                  placeholder="ConformPassword"
+                  required
+                />
+                <!-- <label class="profile-picture-selection"
+                  >Profile Picture
+                </label>
+                <input
+                  type="file"
+                  name="profilepic"
+                  title="choose profile pic "
+                  class="profileupload"
+                  accept="image/png, image/gif, image/jpeg"
+                /> -->
 
+                <select
+                  name="blood_group"
+                  class="group-select"
+                  required
+                  style="margin-bottom: 10px"
+                >
+                  <option value="">
+                    ---&emsp;&emsp;&emsp;&emsp;Blood
+                    Group&emsp;&emsp;&emsp;&emsp;---
+                  </option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                </select>
 
+                <button onclick="validate();">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
-	<div class="row">
+        <div class="col">
+          <div class="donor-card" id="sig">
+            <div class="sign-in-container">
+              <form action="/auth/login" method="POST">
+                <h1>Sign in</h1>
 
+                <span>Enter login details</span>
+                <input type="email" name="email" placeholder="Email" />
+                <input type="password" name="password" placeholder="Password" />
+                <a href="">Forget password</a>
 
-		<div class="col">
-			<div class="donor-card">
-
-				<div class="sign-up-container">
-					<form action="/auth/register" method="POST" name="form1">
-						<h1>Create Account</h1>
-
-						<span>Enter details for registration</span>
-						<input type="text" name='create_fname' placeholder="Name" required />
-						<input type="text" name='create_address' placeholder="district" required />
-						<input type="text" name='create_address' placeholder="region" required />
-						<input type="text" name='create_contact' placeholder="Contact" required />
-						<input type="email" name='create_email' placeholder="Email" required />
-						<input type="password" name='create_password' placeholder="Password" required /> 
-						<input type="password" name='create_password' placeholder="ConformPassword" required /> 
-				<label class="profile-picture-selection">Profile Picture	</label>	<input type="file" name="profilepic" title="choose profile pic "class="profileupload" accept="image/png, image/gif, image/jpeg" />
-
-						<select name="blood_group" class="group-select" required style="margin-bottom: 10px;">
-							<option value="">---&emsp;&emsp;&emsp;&emsp;Blood Group&emsp;&emsp;&emsp;&emsp;---</option>
-							<option value="A+">A+</option>
-							<option value="A-">A-</option>
-							<option value="B+">B+</option>
-							<option value="B-">B-</option>
-							<option value="O+">O+</option>
-							<option value="O-">O-</option>
-							<option value="AB+">AB+</option>
-							<option value="AB-">AB-</option>
-						</select>
-						
-
-
-						<button onclick="validate();">Sign Up</button>
-					</form>
-				</div>
-
-
-
-			</div>
-		</div>
-
-		<div class="col">
-			<div class="donor-card" id="sig">
-
-				<div class="sign-in-container">
-					<form action="/auth/login" method="POST">
-						<h1>Sign in</h1>
-
-						<span>Enter login details</span>
-						<input type="email" name="email" placeholder="Email" />
-						<input type="password" name="password" placeholder="Password" />
-
-						<button>Sign In</button>
-					</form>
-
-
-				</div>
-
-
-
-			</div>
-		</div>
-	</div>
-
-
-
-	  </section>
-</body>
-
+                <button>Sign In</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
