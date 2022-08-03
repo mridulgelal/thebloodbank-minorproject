@@ -15,7 +15,7 @@
   flex-direction: column;
   /* border: solid green; */
 
-  background-image: url(./assets/backgroundwave1.png);
+  background-image: url(../assets/backgroundwave1.png);
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -376,7 +376,7 @@ button:hover {
   width: 100%;
   text-align: center;
 
-  background-image: url(./assets/backgroundwave1.png);
+  background-image: url(../assets/backgroundwave1.png);
 
   background-repeat: no-repeat;
   background-attachment: fixed;

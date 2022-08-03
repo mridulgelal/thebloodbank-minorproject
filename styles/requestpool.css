@@ -7,6 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 .all-doners {
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +86,7 @@ input[type="checkbox"] {
 
   width: 100%;
   /* border: solid rgb(48, 168, 134); */
-  background-image: url(./assets/backgroundwave1.png);
+  background-image: url(../assets/backgroundwave1.png);
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -240,6 +241,19 @@ input[type="checkbox"] {
 
   /* background-color: aquamarine; */
 }
+.donor-card button{
+    
+        padding: 10px 20px;
+        background-color: #ff4b2b;
+        border: 1px solid #ddd;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        border-radius: 15px;
+        /* height: 48px; */
+        align-self: center;
+        font-size: medium;
+      
+  }
 
 .donor-card img {
   width: 100px;
@@ -307,6 +321,8 @@ input[type="checkbox"] {
     margin-left: -40px;
     width: 80%;
   }
+
+  
 
   /* ---------------------------filters-------------------- */
 
